@@ -6,7 +6,7 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
-  target: 'node20',
+  target: 'node24',
   platform: 'node',
   splitting: false,
   // Peer and runtime dependencies stay external; consumers provide Nest.

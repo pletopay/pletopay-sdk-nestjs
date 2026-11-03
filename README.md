@@ -2,7 +2,7 @@
 
 `@pletopay/nestjs` wires the [Pletopay](https://docs.pletopay.com) Node.js SDK into NestJS: an injectable `Pletopay` client, a guard that verifies `X-PletoPay-Signature` on webhook deliveries, and `@OnPletopayEvent()` handlers that receive typed events. It re-exports everything from `@pletopay/node`, so one import covers both.
 
-- NestJS 10, 11 and 12 (Express or Fastify). Node.js 20+.
+- NestJS 10, 11 and 12 (Express or Fastify). Node.js 24+.
 - Everything in `@pletopay/node`: all 82 API operations, idempotency keys, retries, pagination, typed errors.
 
 ## Install

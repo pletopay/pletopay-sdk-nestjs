@@ -9,7 +9,7 @@ pnpm install   # resolves @pletopay/node from ../pletopay-sdk-node (pnpm.overrid
 pnpm verify
 ```
 
-Node.js 22 and pnpm 10 are used for development; the package supports Node.js 20+ and NestJS 10, 11 and 12.
+Node.js 24 and pnpm 10 are used for development; the package supports Node.js 24+ and NestJS 10, 11 and 12.
 
 ## Layout
 
