@@ -5,7 +5,7 @@ Thanks for helping improve the Pletopay NestJS module.
 ## Setup
 
 ```bash
-pnpm install   # resolves @pletopay/node from ../pletopay-sdk-node (pnpm.overrides) until it is published
+pnpm install
 pnpm verify
 ```
 

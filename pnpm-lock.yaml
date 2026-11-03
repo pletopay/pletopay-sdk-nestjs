@@ -4,16 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@pletopay/node': link:../pletopay-sdk-node
-
 importers:
 
   .:
     dependencies:
       '@pletopay/node':
-        specifier: link:../pletopay-sdk-node
-        version: link:../pletopay-sdk-node
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@arethetypeswrong/cli':
         specifier: ^0.18.5
@@ -828,6 +825,10 @@ packages:
   '@pkgr/core@0.3.6':
     resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
     engines: {node: ^14.18.0 || >=16.0.0}
+
+  '@pletopay/node@1.0.0':
+    resolution: {integrity: sha512-6yP5wpkuQ4DiqVeaDoE6WQ8yozvHJSO6JPW2/+C5Ad29dMNBjPccC0K0reAZKMUsZE6gxLlzsFgDtKaVV2UCkQ==}
+    engines: {node: '>=24'}
 
   '@publint/pack@0.1.7':
     resolution: {integrity: sha512-4EDEmvxWtgsCnnVeBvtFIFZtUhPPt1+bA9JrSwU4Sa//6oKtzCSlGGXYJr44OD9aGISymbieJ4mCKHUygUDU+g==}
@@ -3855,6 +3856,8 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.3.6': {}
+
+  '@pletopay/node@1.0.0': {}
 
   '@publint/pack@0.1.7':
     dependencies:

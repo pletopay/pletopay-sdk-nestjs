@@ -103,9 +103,6 @@
     "typescript-eslint": "^8.72.0"
   },
   "pnpm": {
-    "overrides": {
-      "@pletopay/node": "link:../pletopay-sdk-node"
-    },
     "onlyBuiltDependencies": [
       "esbuild"
     ]

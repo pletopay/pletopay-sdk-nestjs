@@ -1,4 +1,4 @@
-# Pull-request and main-branch gates. Until @pletopay/node is on npm the sibling repo is checked out and built.
+# Pull-request and main-branch gates.
 name: CI
 
 on:
@@ -28,24 +28,14 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-          path: pletopay-sdk-nestjs
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-          repository: pletopay/pletopay-sdk-node
-          path: pletopay-sdk-node
       - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
-        with:
-          package_json_file: pletopay-sdk-nestjs/package.json
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: ${{ matrix.node }}
-      - name: Build the Node SDK
-        run: pnpm --dir pletopay-sdk-node install --frozen-lockfile && pnpm --dir pletopay-sdk-node build
       - name: Install
-        run: pnpm --dir pletopay-sdk-nestjs install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Pin the NestJS major under test
         if: ${{ matrix.nest != '11' }}
-        run: pnpm --dir pletopay-sdk-nestjs add -D @nestjs/common@${{ matrix.nest }} @nestjs/core@${{ matrix.nest }} @nestjs/platform-express@${{ matrix.nest }} @nestjs/platform-fastify@${{ matrix.nest }} @nestjs/testing@${{ matrix.nest }}
+        run: pnpm add -D @nestjs/common@${{ matrix.nest }} @nestjs/core@${{ matrix.nest }} @nestjs/platform-express@${{ matrix.nest }} @nestjs/platform-fastify@${{ matrix.nest }} @nestjs/testing@${{ matrix.nest }}
       - name: Verify
-        run: pnpm --dir pletopay-sdk-nestjs verify
+        run: pnpm verify
