@@ -79,7 +79,7 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.5",
-    "@eslint/js": "^9.39.0",
+    "@eslint/js": "^10.0.1",
     "@nestjs/common": "^11.2.6",
     "@nestjs/core": "^11.2.6",
     "@nestjs/platform-express": "^11.2.6",
