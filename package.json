@@ -7,10 +7,10 @@
   "homepage": "https://docs.pletopay.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evidenze/pletopay-sdk-nestjs.git"
+    "url": "git+https://github.com/pletopay/pletopay-sdk-nestjs.git"
   },
   "bugs": {
-    "url": "https://github.com/evidenze/pletopay-sdk-nestjs/issues"
+    "url": "https://github.com/pletopay/pletopay-sdk-nestjs/issues"
   },
   "keywords": [
     "pletopay",

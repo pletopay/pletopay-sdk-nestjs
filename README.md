@@ -74,7 +74,7 @@ export class OrdersService {
 }
 ```
 
-`@InjectPletopay()` and the `PLETOPAY_CLIENT` token inject the same instance. See the [Node SDK README](https://github.com/evidenze/pletopay-sdk-node#readme) for every resource, pagination, errors and retries.
+`@InjectPletopay()` and the `PLETOPAY_CLIENT` token inject the same instance. See the [Node SDK README](https://github.com/pletopay/pletopay-sdk-node#readme) for every resource, pagination, errors and retries.
 
 ## Webhooks
 
