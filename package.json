@@ -89,7 +89,7 @@
     "@types/jest": "^30.0.0",
     "@types/node": "^22.19.0",
     "@types/supertest": "^7.2.1",
-    "eslint": "^10.13.0",
+    "eslint": "^10.14.0",
     "eslint-config-prettier": "^10.1.8",
     "jest": "^30.5.2",
     "prettier": "^3.9.9",
@@ -100,7 +100,7 @@
     "ts-jest": "^29.4.15",
     "tsup": "^9.0.0",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.72.0"
+    "typescript-eslint": "^8.72.1"
   },
   "pnpm": {
     "overrides": {
